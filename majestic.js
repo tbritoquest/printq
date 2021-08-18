@@ -8,7 +8,7 @@ router.get('/akuafoil', (req,res)=>{
 })
 
 router.get('/brown-kraft-cards', (req,res)=>{
-    res.send('brown-kraft-cards')
+    res.render('services/brown-kraft-cards')
 })
 
 module.exports = router
