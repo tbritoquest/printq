@@ -1,5 +1,14 @@
 <h1 class="title">Brown Kraft Cards</h1>
 
+<div class="field">
+  <label class="label">Order Date</label>
+  <div class="select is-medium">
+      <select>
+        <option selected id="currDate"><script></script></option>
+      </select>
+  </div>
+</div>
+
 <div id="form-fields">
 <div class="field">
     <label class="label">Product Category</label>
@@ -7,10 +16,11 @@
         <select>
           <option value="" disabled selected>Select Product Category</option>
           <option value="70">Business Cards</option> 
-          <option>Greeting Cards</option>
-          <option>Menu</option>
-          <option>Postcards</option>
-          <option>Sell Sheets</option>
+          <option value="bkc-gc80">Greeting Cards</option>
+          <option value="bkc-m70">Menu</option>
+          <option value="bkc-pc100">Postcards</option>
+          <option value="bkc-ss100">Sell Sheets</option>
+          <option value="bkc-tc100">Trading Cards</option>
         </select>
     </div>
 </div>
@@ -73,10 +83,27 @@
 </div> -->
   
   </div><br>
-  
+
+
+
+  <div class="field sample-date hide">
+    <hr>
+    <label class="label">Sample Date</label>
+    <input type="date" id="sampleDate" name="sample-date"
+    value=""
+    min="">
+  </div>
+
+  <div class="field notes hide">
+    <label class="label">Notes</label>
+    <div class="control">
+      <textarea class="textarea is-medium" placeholder="Medium textarea"></textarea>
+    </div>
+  </div>
+
   <div class="field is-grouped">
     <div class="control">
-      <button class="button is-link" id="back-button" onclick="prev()" style="display: none;">Back</button>
+      <button class="button is-link" id="back-button" onclick="prev()" style="display: none;">Previous</button>
     </div>
     <div class="control">
       <button class="button is-link is-light" onclick="next()">Next</button>

@@ -1,3 +1,13 @@
-body{
-    background: red;
+#sampleDate{
+    padding: 0.8em !important;
+    font-size: 1em !important;
+    background-color: #fff !important;
+    border: 1px solid #dbdbdb !important;
+    border-radius: 4px !important;
+    color: #363636 !important;
+    outline: none !important;
+}
+
+.hide{
+    display: none;
 }
