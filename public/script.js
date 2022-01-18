@@ -25,6 +25,13 @@ function addAnswersToQuestion(id, answers29){
     source.answers.push(...answers29)
 }
 
+//Given answer objects, returns an array of ids
+function getIds(arr){
+    return arr.map((el)=>{
+        return el.id
+    })
+}
+
 let answers1 = [{id:"10",path:null,text:"100"}, {id:"11",path:null,text:"250"}, {id:"12",path:null,text:"500"}, {id:"13",path:null,text:"1000"}]
 let q1 = {id:"1",answers:getIds(answers1),text:"Runsize"}
 
@@ -67,12 +74,6 @@ addToAnswers(answers7)
 
 ////////////////////////////////////////// GREETING CARDS //////////////////////////////////////////////
 
-//Given answer objects, returns an array of ids
-function getIds(arr){
-    return arr.map((el)=>{
-        return el.id
-    })
-}
 
 let answers8 = [{id:"bkc-gc10",path:null,text:"No Blank Envelopes"}, {id:"bkc-gc11", path:null, text: "Yes 100 Kraft Envelopes A7"}, {id:"bkc-gc12", path:null, text: "Yes 250 Kraft Envelopes A7"},{id:"bkc-gc13", path:null, text: "Yes 500 Kraft Envelopes A7"},{id:"bkc-gc14", path:null, text: "Yes 1000 Kraft Envelopes A7"}]
 let q8 = {id:"8",answers:getIds(answers8),text:"Blank Envelopes"}

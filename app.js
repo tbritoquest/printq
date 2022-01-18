@@ -1,4 +1,5 @@
 const express = require('express')
+console.log("hello")
 const app = express()
 const expressLayouts = require('express-ejs-layouts')
 const port = process.env.PORT || 3000
@@ -18,4 +19,6 @@ const majestic = require('./majestic.js')
 
 app.use('/category', majestic)
 
-app.listen(3000)
+app.listen(3000, function(){
+    console.log("Express server listening on port 3000");
+})
