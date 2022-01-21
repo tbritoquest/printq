@@ -7,19 +7,55 @@
     <title>Document</title>
     <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" integrity="sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
 </head>
 <body>
     <h1>LAYOUT</h1>
 
-
+    
     <section class="section">
-        <div class="container">
-            <%- body %>
+        <div class="container is-fluid">
+
+            <div class="columns is-variable is-8">
+                <div class="column is-one-fifth">
+                    <aside class="menu">
+                        <p class="menu-label">
+                          Majestic Products(old)
+                        </p>
+                        <ul class="menu-list">
+                          <li><a href="/category/akuafoil">akuafoil</a></li>
+                          <li><a href="/category/brown-kraft-cards">brown-kraft-cards</a></li>
+                        </ul>
+                        <p class="menu-label">
+                            Printing Products
+                        </p>
+                        <ul class="menu-list">
+                            <li><a href="/printing-products/envelopes">Envelopes</a></li>
+                            <li><a href="/printing-products/menus">Menus</a></li>
+                            <li><a href="/printing-products/greeting-cards">Greeting Cards</a></li>
+                        </ul>
+                        <p class="menu-label">
+                            Large format printing
+                        </p>
+                        <ul class="menu-list">
+                          <li><a>Banners</a></li>
+                          <li><a>Transfers</a></li>
+                          <li><a>Balance</a></li>
+                        </ul>
+                      </aside>
+                </div>
+                <div class="column">
+                    <%- body %>
+                </div>
+                
+              </div>
+
         </div>
       </section>
     
 
 
-    <script src="/script.js"></script>
+    <!-- <script src="/products/script.js"></script> -->
+    <script src="/products/envelopes.js"></script>
 </body>
 </html>
