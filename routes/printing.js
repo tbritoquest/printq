@@ -7,11 +7,12 @@ const reader = require('xlsx')
 
 router.get('/envelopes', (req,res)=>{
     let data = getProducts('envelopes')
-    res.render('services/envelopes',{products:JSON.stringify(data), name:"thalia"})
+    res.render('services/envelopes',{products:JSON.stringify(data)})
 })
 
 router.get('/menus', (req,res)=>{
-    res.render('services/menus')
+    let data = getProducts('menus')
+    res.render('services/menus',{products:JSON.stringify(data)})
 })
 
 router.get('/greeting-cards', (req,res)=>{
@@ -25,6 +26,7 @@ module.exports = router
 
 function getProducts(name){
     // Reading our test file
+    
     const file = reader.readFile(`db/${name}.xlsx`)
    
     let data = []
@@ -40,8 +42,6 @@ function getProducts(name){
     })
     }
     
-    // Printing data
-    console.log(data)
 
     return data
 }

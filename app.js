@@ -14,9 +14,9 @@ app.use(express.static('public'))
 const majestic = require('./routes/majestic.js')
 const printing = require('./routes/printing')
 
-// app.get('/',(req,res)=>{
-//     res.render('welcome')
-// })
+app.get('/',(req,res)=>{
+    res.render('welcome')
+})
 
 app.use('/printing-products', printing)
 app.use('/category', majestic)
