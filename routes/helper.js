@@ -85,7 +85,7 @@ let input = {
     'Stock': ['16PT C2S'],
     'Coating' : ['No Coating'],
     'Lamination': ['Silk'],
-    'Spot UV Sides': [''],
+    'Spot UV Sides': ['n/a'],
     'Colorspec': ['4/0', '4/1','4/4'],
     'Runsize': [25,50,75,100,250,500,1000,2500,5000,10000],
     'Scoring Options': ['Score in Half'],
@@ -103,7 +103,7 @@ let input2 = {
     'Stock': ['16PT C2S'],
     'Coating' : ['No Coating'],
     'Lamination': ['Silk'],
-    'Spot UV Sides': [''],
+    'Spot UV Sides': ['n/a'],
     'Colorspec': ['4/0', '4/1','4/4'],
     'Runsize': [25,50,75,100,250,500,1000,2500,5000,10000],
     'Scoring Options': ['Score in Half'],
@@ -121,7 +121,7 @@ let input3 = {
     'Stock': ['16PT C2S'],
     'Coating' : ['No Coating'],
     'Lamination': ['Silk'],
-    'Spot UV Sides': [''],
+    'Spot UV Sides': ['n/a'],
     'Colorspec': ['4/0', '4/1','4/4'],
     'Runsize': [25,50,75,100,250,500,1000,2500,5000,10000],
     'Scoring Options': ['Score in Half'],
@@ -138,7 +138,7 @@ let input4 = {
     'Stock': ['16PT C2S'],
     'Coating' : ['No Coating'],
     'Lamination': ['Silk'],
-    'Spot UV Sides': [''],
+    'Spot UV Sides': ['n/a'],
     'Colorspec': ['4/0', '4/1','4/4'],
     'Runsize': [25,50,75,100,250,500,1000,2500,5000,10000],
     'Scoring Options': ['Score in Half'],
@@ -157,11 +157,11 @@ let input5 = {
     'Stock': ['16PT C2S'],
     'Coating' : ['No Coating'],
     'Lamination': ['Silk'],
-    'Spot UV Sides': [''],
+    'Spot UV Sides': ['n/a'],
     'Colorspec': ['4/0', '4/1','4/4'],
     'Runsize': [25,50,75,100,250,500,1000,2500,5000,10000],
     'Scoring Options': ['Score in Half'],
-    'Slits': [''],
+    'Slits': ['n/a'],
     'Blank Envelopes': ['No Blank Envelopes','Yes 25 Envelopes A9','Yes 50 Envelopes A9','Yes 75 Envelopes A9','Yes 100 Envelopes A9','Yes 250 Envelopes A9','Yes 500 Envelopes A9','Yes 1000 Envelopes A9','Yes 2500 Envelopes A9','Yes 5000 Envelopes A9','Yes 10000 Envelopes A9']
 }
 
@@ -311,7 +311,7 @@ let input13 = {
 let input14 = {
     'Product Type': ['Majestic'],
     'Majestic Type': ['Silk'],
-    'Size': ['7 x 10'],
+    'Size': ['8.5 x 11'],
     'Product Orientation':['Horizontal','Vertical'],
     'Shape': ['Rectangle'],
     'Stock': ['16PT C2S'],
@@ -327,7 +327,7 @@ let input14 = {
 let input15 = {
     'Product Type': ['Majestic'],
     'Majestic Type': ['Silk'],
-    'Size': ['7 x 10'],
+    'Size': ['8.5 x 11'],
     'Product Orientation':['Horizontal','Vertical'],
     'Shape': ['Rectangle'],
     'Stock': ['16PT C2S'],
@@ -340,5 +340,7 @@ let input15 = {
     'Slits': ['Moon Slits Bottom Panel','Moon Slits Right Panel','No Gift Cards Slits','Slide Slits Bottom Panel','Slide Slits Right Panel'],
     'Blank Envelopes': ['Yes 500 Envelopes A9','Yes 1000 Envelopes A9','Yes 2500 Envelopes A9','Yes 5000 Envelopes A9','Yes 10000 Envelopes A9']
 }
+
+
 
 module.exports = router

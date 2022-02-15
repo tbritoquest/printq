@@ -15,9 +15,26 @@ router.get('/menus', (req,res)=>{
     res.render('services/menus',{products:JSON.stringify(data)})
 })
 
-router.get('/greeting-cards', (req,res)=>{
-    res.render('services/greeting-cards')
+router.get('/greeting-cards/', (req,res)=>{
+    let majesticType= Object.keys(req.query).length?req.query.q:''
+
+    if(majesticType){//silk,
+        let data = getProducts(`greeting-cards-${majesticType}`)
+        res.render('services/greeting-cards-type',{products:JSON.stringify(data),majesticType})
+    }else{
+        let data = getProducts('greeting-cards')
+        res.render('services/greeting-cards',{products:JSON.stringify(data)})
+    }
+    console.log("HELO")
+    console.log("REQ",req.query)
+    
 })
+
+// router.get('/greeting-cards/:majesticType',(req,res)=>{
+//     console.log("hello")
+//     console.log(req.params)
+//     res.render('services/greeting-cards')
+// })
 
 module.exports = router
 

@@ -1,1 +1,38 @@
-<h1>Greeting Cards</h1>
+<div class="column">         
+    <div id="greeting">
+        <div id="form-fields">
+            <h1>MASTER</h1>
+            <div class="field"><label class="label">Product Type</label>
+                <div class="select is-medium">
+                    <select onchange="checkAnswer(0)">
+                        <option value="Majestic">Majestic</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field">
+                 <label class="label">Majestic Type</label>
+                <div class="select is-medium">
+                    <select onchange="getMajesticType(this.value)">
+                        <option value="" disabled="" selected="">Select Majestic Type</option>
+                        <option value="Akuafoil">Akuafoil</option>
+                        <option value="Raised Foil">Raised Foil</option>
+                        <option value="Raised Spot UV">Raised Spot UV</option>
+                        <option value="Silk">Silk</option>
+                        <option value="Suede">Suede</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <a href="/printing-products/greeting-cards/?q=silk">Silk</a>
+    </div>
+    
+   
+</div>
+
+<script>
+
+    function getMajesticType(val){
+        window.location= encodeURI(`/printing-products/greeting-cards/?q=${val.toLowerCase()}`)
+    }
+
+</script>
