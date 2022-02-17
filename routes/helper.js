@@ -5,7 +5,7 @@ const fs = require('fs')
 router.get('/data', (req,res)=>{
 
     // EDIT THIS LINE ONLY
-    let inputs = [input,input2,input3,input4,input5,input6,input7,input8,input9,input10,input11,input12,input13,input14,input15]
+    let inputs = [input,input2,input3,input4,input5,input6,input7,input8,input9,input10,input11,input12,input13,input14,input15,input16,input17]
     //END 
 
     let questions = []
@@ -73,274 +73,303 @@ function merge(options, strArr){
 
 //------------------EDIT DATA BELOW --------------------------------//xs
 
-//COATING: No Coating
 
 //A2
 let input = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
-    'Size': ['4.25 x 11','5.5 x 8.5'],
-    'Product Orientation':['Horizontal','Vertical'],
+    'Majestic Type': ['Suede'],
+    'Size': ['4.25 x 11'],
     'Shape': ['Rectangle'],
     'Stock': ['16PT C2S'],
-    'Coating' : ['No Coating'],
-    'Lamination': ['Silk'],
-    'Spot UV Sides': ['n/a'],
-    'Colorspec': ['4/0', '4/1','4/4'],
-    'Runsize': [25,50,75,100,250,500,1000,2500,5000,10000],
-    'Scoring Options': ['Score in Half'],
-    'Slits': ['Moon Slits Bottom Panel','Moon Slits Right Panel','No Gift Cards Slits','Slide Slits Bottom Panel','Slide Slits Right Panel'],
-    'Blank Envelopes': ['No Blank Envelopes','Yes 25 Envelopes A2','Yes 50 Envelopes A2','Yes 75 Envelopes A2','Yes 100 Envelopes A2','Yes 250 Envelopes A2','Yes 500 Envelopes A2','Yes 1000 Envelopes A2','Yes 2500 Envelopes A2','Yes 5000 Envelopes A2','Yes 10000 Envelopes A2']
+    'Coating' : ['Spot UV'],
+    'Spot UV Sides': ['Spot UV Front'],
+    'Lamination': ['Velvet'],
+    'Colorspec': ['4/0 (4 color front)'],
+    'Runsize': [500,1000,2500,5000,10000],
+    'Scoring Options':['Score in Half'],
+    'Slits':['n/a'],
+    'Blank Envelopes': ['No Blank Envelopes','Yes 500 Envelopes A2','Yes 1000 Envelopes A2','Yes 5000 Envelopes A2','Yes 10000 Envelopes A2']
 }
 
-//A6
+
 let input2 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
-    'Size': ['6 x 9'],
-    'Product Orientation':['Horizontal','Vertical'],
+    'Majestic Type': ['Suede'],
+    'Size': ['4.25 x 11'],
     'Shape': ['Rectangle'],
     'Stock': ['16PT C2S'],
-    'Coating' : ['No Coating'],
-    'Lamination': ['Silk'],
-    'Spot UV Sides': ['n/a'],
-    'Colorspec': ['4/0', '4/1','4/4'],
-    'Runsize': [25,50,75,100,250,500,1000,2500,5000,10000],
-    'Scoring Options': ['Score in Half'],
-    'Slits': ['Moon Slits Bottom Panel','Moon Slits Right Panel','No Gift Cards Slits','Slide Slits Bottom Panel','Slide Slits Right Panel'],
-    'Blank Envelopes': ['No Blank Envelopes','Yes 25 Envelopes A6','Yes 50 Envelopes A6','Yes 75 Envelopes A6','Yes 100 Envelopes A6','Yes 250 Envelopes A6','Yes 500 Envelopes A6','Yes 1000 Envelopes A6','Yes 2500 Envelopes A6','Yes 5000 Envelopes A6','Yes 10000 Envelopes A6']
+    'Coating' : ['Spot UV'],
+    'Spot UV Sides': ['Spot UV Front','Spot UV Back','Spot UV Both Sides'],
+    'Lamination': ['Velvet'],
+    'Colorspec': ['4/1','4/4 (4 color both sides)'],
+    'Runsize': [500,1000,2500,5000,10000],
+    'Scoring Options':['Score in Half'],
+    'Slits':['n/a'],
+    'Blank Envelopes': ['No Blank Envelopes','Yes 500 Envelopes A2','Yes 1000 Envelopes A2','Yes 5000 Envelopes A2','Yes 10000 Envelopes A2']
 }
 
-//6.5X6.5
+//---------------------Size: 5.5 x 8.5 -------------------//
+
+//no coating
 let input3 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
-    'Size': ['6 x 12'],
-    'Product Orientation':['Horizontal','Vertical'],
+    'Majestic Type': ['Suede'],
+    'Size': ['5.5 x 8.5'],
     'Shape': ['Rectangle'],
     'Stock': ['16PT C2S'],
     'Coating' : ['No Coating'],
-    'Lamination': ['Silk'],
-    'Spot UV Sides': ['n/a'],
-    'Colorspec': ['4/0', '4/1','4/4'],
-    'Runsize': [25,50,75,100,250,500,1000,2500,5000,10000],
-    'Scoring Options': ['Score in Half'],
-    'Slits': ['Moon Slits Bottom Panel','Moon Slits Right Panel','No Gift Cards Slits','Slide Slits Bottom Panel','Slide Slits Right Panel'],
-    'Blank Envelopes': ['No Blank Envelopes','Yes 25 Envelopes 6.5X6.5','Yes 50 Envelopes 6.5X6.5','Yes 75 Envelopes 6.5X6.5','Yes 100 Envelopes 6.5X6.5','Yes 250 Envelopes 6.5X6.5','Yes 500 Envelopes 6.5X6.5','Yes 1000 Envelopes 6.5X6.5','Yes 2500 Envelopes 6.5X6.5','Yes 5000 Envelopes 6.5X6.5','Yes 10000 Envelopes 6.5X6.5']
+    'Spot UV Sides':['n/a'],
+    'Lamination': ['Velvet'],
+    'Colorspec': ['4/0 (4 color front)','4/1','4/4 (4 color both sides)'],
+    'Runsize': [100,250,500,1000,2500,5000,10000],
+    'Scoring Options':['Score in Half'],
+    'Slits':['n/a'],
+    'Blank Envelopes': ['No Blank Envelopes','Yes 100 Envelopes A2','Yes 250 Envelopes A2','Yes 500 Envelopes A2','Yes 1000 Envelopes A2','Yes 5000 Envelopes A2','Yes 10000 Envelopes A2']
 }
-//A7
+
+//spot uv
 let input4 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
-    'Size': ['7 x 10'],
-    'Product Orientation':['Horizontal','Vertical'],
+    'Majestic Type': ['Suede'],
+    'Size': ['5.5 x 8.5'],
     'Shape': ['Rectangle'],
     'Stock': ['16PT C2S'],
-    'Coating' : ['No Coating'],
-    'Lamination': ['Silk'],
-    'Spot UV Sides': ['n/a'],
-    'Colorspec': ['4/0', '4/1','4/4'],
-    'Runsize': [25,50,75,100,250,500,1000,2500,5000,10000],
-    'Scoring Options': ['Score in Half'],
-    'Slits': ['Moon Slits Bottom Panel','Moon Slits Right Panel','No Gift Cards Slits','Slide Slits Bottom Panel','Slide Slits Right Panel'],
-    'Blank Envelopes': ['No Blank Envelopes','Yes 25 Envelopes A7','Yes 50 Envelopes A7','Yes 75 Envelopes A7','Yes 100 Envelopes A7','Yes 250 Envelopes A7','Yes 500 Envelopes A7','Yes 1000 Envelopes A7','Yes 2500 Envelopes A7','Yes 5000 Envelopes A7','Yes 10000 Envelopes A7']
+    'Coating' : ['Spot UV'],
+    'Spot UV Sides':['Spot UV Front'],
+    'Lamination': ['Velvet'],
+    'Colorspec': ['4/0 (4 color front)'],
+    'Runsize': [500,1000,2500,5000,10000],
+    'Scoring Options':['Score in Half'],
+    'Slits':['n/a'],
+    'Blank Envelopes': ['No Blank Envelopes','Yes 500 Envelopes A2','Yes 1000 Envelopes A2','Yes 5000 Envelopes A2','Yes 10000 Envelopes A2']
 }
 
-
-//No slits. A9
 let input5 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
-    'Size': ['8.5 x 11'],
-    'Product Orientation':['Horizontal','Vertical'],
+    'Majestic Type': ['Suede'],
+    'Size': ['5.5 x 8.5'],
+    'Shape': ['Rectangle'],
+    'Stock': ['16PT C2S'],
+    'Coating' : ['Spot UV'],
+    'Spot UV Sides':['Spot UV Front','Spot UV Back','Spot UV Both Sides'],
+    'Lamination': ['Velvet'],
+    'Colorspec': ['4/1','4/4 (4 color both sides)'],
+    'Runsize': [500,1000,2500,5000,10000],
+    'Scoring Options':['Score in Half'],
+    'Slits':['n/a'],
+    'Blank Envelopes': ['No Blank Envelopes','Yes 500 Envelopes A2','Yes 1000 Envelopes A2','Yes 5000 Envelopes A2','Yes 10000 Envelopes A2']
+}
+
+//----------------------Size: 6 x 9---------------//
+
+//A6
+//no coating
+let input6 = {
+    'Product Type': ['Majestic'],
+    'Majestic Type': ['Suede'],
+    'Size': ['6 x 9'],
     'Shape': ['Rectangle'],
     'Stock': ['16PT C2S'],
     'Coating' : ['No Coating'],
-    'Lamination': ['Silk'],
-    'Spot UV Sides': ['n/a'],
-    'Colorspec': ['4/0', '4/1','4/4'],
-    'Runsize': [25,50,75,100,250,500,1000,2500,5000,10000],
-    'Scoring Options': ['Score in Half'],
-    'Slits': ['n/a'],
-    'Blank Envelopes': ['No Blank Envelopes','Yes 25 Envelopes A9','Yes 50 Envelopes A9','Yes 75 Envelopes A9','Yes 100 Envelopes A9','Yes 250 Envelopes A9','Yes 500 Envelopes A9','Yes 1000 Envelopes A9','Yes 2500 Envelopes A9','Yes 5000 Envelopes A9','Yes 10000 Envelopes A9']
+    'Spot UV Sides':['n/a'],
+    'Lamination': ['Velvet'],
+    'Colorspec': ['4/0 (4 color front)','4/1','4/4 (4 color both sides)'],
+    'Runsize': [100,250,500,1000,2500,5000,10000],
+    'Scoring Options':['Score in Half'],
+    'Slits':['n/a'],
+    'Blank Envelopes': ['No Blank Envelopes','Yes 100 Envelopes A6','Yes 250 Envelopes A6','Yes 500 Envelopes A6','Yes 1000 Envelopes A6','Yes 5000 Envelopes A6','Yes 10000 Envelopes A6']
 }
 
-// COATING: Spot UV
-let input6 = {
-    'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
-    'Size': ['4.25 x 11', '5.5 x 8.5'],
-    'Product Orientation':['Horizontal','Vertical'],
-    'Shape': ['Rectangle'],
-    'Stock': ['16PT C2S'],
-    'Coating' : ['Spot UV'],
-    'Lamination': ['Silk'],
-    'Spot UV Sides': ['Spot UV Front','Spot UV Back','Spot UV Both Sides'],
-    'Colorspec': ['4/1','4/4 (4 color both sides)'],
-    'Runsize': [500,1000,2500,5000,10000],
-    'Scoring Options': ['Score in Half'],
-    'Slits': ['Moon Slits Bottom Panel','Moon Slits Right Panel','No Gift Cards Slits','Slide Slits Bottom Panel','Slide Slits Right Panel'],
-    'Blank Envelopes': ['Yes 500 Envelopes A2','Yes 1000 Envelopes A2','Yes 2500 Envelopes A2','Yes 5000 Envelopes A2','Yes 10000 Envelopes A2']
-}
-
-//same size as above but colorspec is different
+//spot uv
 let input7 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
-    'Size': ['4.25 x 11','5.5 x 8.5'],
-    'Product Orientation':['Horizontal','Vertical'],
+    'Majestic Type': ['Suede'],
+    'Size': ['6 x 9'],
     'Shape': ['Rectangle'],
     'Stock': ['16PT C2S'],
     'Coating' : ['Spot UV'],
-    'Lamination': ['Silk'],
-    'Spot UV Sides': ['Spot UV Front'],
+    'Spot UV Sides':['Spot UV Front'],
+    'Lamination': ['Velvet'],
     'Colorspec': ['4/0 (4 color front)'],
     'Runsize': [500,1000,2500,5000,10000],
-    'Scoring Options': ['Score in Half'],
-    'Slits': ['Moon Slits Bottom Panel','Moon Slits Right Panel','No Gift Cards Slits','Slide Slits Bottom Panel','Slide Slits Right Panel'],
-    'Blank Envelopes': ['Yes 500 Envelopes A2','Yes 1000 Envelopes A2','Yes 2500 Envelopes A2','Yes 5000 Envelopes A2','Yes 10000 Envelopes A2']
+    'Scoring Options':['Score in Half'],
+    'Slits':['n/a'],
+    'Blank Envelopes': ['No Blank Envelopes','Yes 500 Envelopes A6','Yes 1000 Envelopes A6','Yes 5000 Envelopes A6','Yes 10000 Envelopes A6']
 }
 
-//-----------size: 6x9 ----------//
 let input8 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
+    'Majestic Type': ['Suede'],
     'Size': ['6 x 9'],
-    'Product Orientation':['Horizontal','Vertical'],
     'Shape': ['Rectangle'],
     'Stock': ['16PT C2S'],
     'Coating' : ['Spot UV'],
-    'Lamination': ['Silk'],
-    'Spot UV Sides': ['Spot UV Front','Spot UV Back','Spot UV Both Sides'],
+    'Spot UV Sides':['Spot UV Front','Spot UV Back','Spot UV Both Sides'],
+    'Lamination': ['Velvet'],
     'Colorspec': ['4/1','4/4 (4 color both sides)'],
     'Runsize': [500,1000,2500,5000,10000],
-    'Scoring Options': ['Score in Half'],
-    'Slits': ['Moon Slits Bottom Panel','Moon Slits Right Panel','No Gift Cards Slits','Slide Slits Bottom Panel','Slide Slits Right Panel'],
-    'Blank Envelopes': ['Yes 500 Envelopes A6','Yes 1000 Envelopes A6','Yes 2500 Envelopes A6','Yes 5000 Envelopes A6','Yes 10000 Envelopes A6']
+    'Scoring Options':['Score in Half'],
+    'Slits':['n/a'],
+    'Blank Envelopes': ['No Blank Envelopes','Yes 500 Envelopes A6','Yes 1000 Envelopes A6','Yes 5000 Envelopes A6','Yes 10000 Envelopes A6']
 }
 
-//same size as above but colorspec is different
+//---------------------Size: 6 x 12 --------------------//
+
+//envelopes 6.5X6.5
+//no coating
 let input9 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
-    'Size': ['6 x 9'],
-    'Product Orientation':['Horizontal','Vertical'],
+    'Majestic Type': ['Suede'],
+    'Size': ['6 x 12'],
     'Shape': ['Rectangle'],
     'Stock': ['16PT C2S'],
-    'Coating' : ['Spot UV'],
-    'Lamination': ['Silk'],
-    'Spot UV Sides': ['Spot UV Front'],
-    'Colorspec': ['4/0 (4 color front)'],
-    'Runsize': [500,1000,2500,5000,10000],
-    'Scoring Options': ['Score in Half'],
-    'Slits': ['Moon Slits Bottom Panel','Moon Slits Right Panel','No Gift Cards Slits','Slide Slits Bottom Panel','Slide Slits Right Panel'],
-    'Blank Envelopes': ['Yes 500 Envelopes A6','Yes 1000 Envelopes A6','Yes 2500 Envelopes A6','Yes 5000 Envelopes A6','Yes 10000 Envelopes A6']
+    'Coating' : ['No Coating'],
+    'Spot UV Sides':['n/a'],
+    'Lamination': ['Velvet'],
+    'Colorspec': ['4/0 (4 color front)','4/1','4/4 (4 color both sides)'],
+    'Runsize': [100,250,500,1000,2500,5000,10000],
+    'Scoring Options':['Score in Half'],
+    'Slits': ['Moon Slits Bottom Panel','Moon Slits Right Panel','No Gift Card Slits','Slide Slits Bottom Panel','Slide Slits Right Panel'],
+    'Blank Envelopes': ['No Blank Envelopes','Yes 100 Envelopes 6.5X6.5','Yes 250 Envelopes 6.5X6.5','Yes 500 Envelopes 6.5X6.5','Yes 1000 Envelopes 6.5X6.5','Yes 5000 Envelopes 6.5X6.5','Yes 10000 Envelopes 6.5X6.5']
 }
 
-//----------size: 6 x 12------------//
+//spot uv
 let input10 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
+    'Majestic Type': ['Suede'],
     'Size': ['6 x 12'],
-    'Product Orientation':['Horizontal','Vertical'],
     'Shape': ['Rectangle'],
     'Stock': ['16PT C2S'],
     'Coating' : ['Spot UV'],
-    'Lamination': ['Silk'],
-    'Spot UV Sides': ['Spot UV Front','Spot UV Back','Spot UV Both Sides'],
-    'Colorspec': ['4/1','4/4 (4 color both sides)'],
+    'Spot UV Sides':['Spot UV Front'],
+    'Lamination': ['Velvet'],
+    'Colorspec': ['4/0 (4 color front)'],
     'Runsize': [500,1000,2500,5000,10000],
-    'Scoring Options': ['Score in Half'],
-    'Slits': ['Moon Slits Bottom Panel','Moon Slits Right Panel','No Gift Cards Slits','Slide Slits Bottom Panel','Slide Slits Right Panel'],
-    'Blank Envelopes': ['Yes 500 Envelopes 6.5X6.5','Yes 1000 Envelopes 6.5X6.5','Yes 2500 Envelopes 6.5X6.5','Yes 5000 Envelopes 6.5X6.5','Yes 10000 Envelopes 6.5X6.5']
+    'Scoring Options':['Score in Half'],
+    'Slits': ['Moon Slits Bottom Panel','Moon Slits Right Panel','No Gift Card Slits','Slide Slits Bottom Panel','Slide Slits Right Panel'],
+    'Blank Envelopes': ['No Blank Envelopes','Yes 500 Envelopes 6.5X6.5','Yes 1000 Envelopes 6.5X6.5','Yes 5000 Envelopes 6.5X6.5','Yes 10000 Envelopes 6.5X6.5']
 }
 
 let input11 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
+    'Majestic Type': ['Suede'],
     'Size': ['6 x 12'],
-    'Product Orientation':['Horizontal','Vertical'],
     'Shape': ['Rectangle'],
     'Stock': ['16PT C2S'],
     'Coating' : ['Spot UV'],
-    'Lamination': ['Silk'],
-    'Spot UV Sides': ['Spot UV Front'],
-    'Colorspec': ['4/0 (4 color front)'],
+    'Spot UV Sides':['Spot UV Front','Spot UV Back','Spot UV Both Sides'],
+    'Lamination': ['Velvet'],
+    'Colorspec': ['4/1','4/4 (4 color both sides)'],
     'Runsize': [500,1000,2500,5000,10000],
-    'Scoring Options': ['Score in Half'],
-    'Slits': ['Moon Slits Bottom Panel','Moon Slits Right Panel','No Gift Cards Slits','Slide Slits Bottom Panel','Slide Slits Right Panel'],
-    'Blank Envelopes': ['Yes 500 Envelopes 6.5X6.5','Yes 1000 Envelopes 6.5X6.5','Yes 2500 Envelopes 6.5X6.5','Yes 5000 Envelopes 6.5X6.5','Yes 10000 Envelopes 6.5X6.5']
+    'Scoring Options':['Score in Half'],
+    'Slits': ['Moon Slits Bottom Panel','Moon Slits Right Panel','No Gift Card Slits','Slide Slits Bottom Panel','Slide Slits Right Panel'],
+    'Blank Envelopes': ['No Blank Envelopes','Yes 500 Envelopes 6.5X6.5','Yes 1000 Envelopes 6.5X6.5','Yes 5000 Envelopes 6.5X6.5','Yes 10000 Envelopes 6.5X6.5']
 }
 
-//------------size: 7 x 10-------------//
+//---------------------size: 7 x 10----------------------//
+
+//A7
+//no coating
 let input12 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
+    'Majestic Type': ['Suede'],
     'Size': ['7 x 10'],
-    'Product Orientation':['Horizontal','Vertical'],
     'Shape': ['Rectangle'],
     'Stock': ['16PT C2S'],
-    'Coating' : ['Spot UV'],
-    'Lamination': ['Silk'],
-    'Spot UV Sides': ['Spot UV Front','Spot UV Back','Spot UV Both Sides'],
-    'Colorspec': ['4/1','4/4 (4 color both sides)'],
-    'Runsize': [500,1000,2500,5000,10000],
-    'Scoring Options': ['Score in Half'],
-    'Slits': ['Moon Slits Bottom Panel','Moon Slits Right Panel','No Gift Cards Slits','Slide Slits Bottom Panel','Slide Slits Right Panel'],
-    'Blank Envelopes': ['Yes 500 Envelopes A7','Yes 1000 Envelopes A7','Yes 2500 Envelopes A7','Yes 5000 Envelopes A7','Yes 10000 Envelopes A7']
+    'Coating' : ['No Coating'],
+    'Spot UV Sides':['n/a'],
+    'Lamination': ['Velvet'],
+    'Colorspec': ['4/0 (4 color front)','4/1','4/4 (4 color both sides)'],
+    'Runsize': [100,250,500,1000,2500,5000,10000],
+    'Scoring Options':['Score in Half'],
+    'Slits': ['n/a'],
+    'Blank Envelopes': ['No Blank Envelopes','Yes 100 Envelopes A7','Yes 250 Envelopes A7','Yes 500 Envelopes A7','Yes 1000 Envelopes A7','Yes 5000 Envelopes A7','Yes 10000 Envelopes A7']
 }
 
+//spot uv
 let input13 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
+    'Majestic Type': ['Suede'],
     'Size': ['7 x 10'],
-    'Product Orientation':['Horizontal','Vertical'],
     'Shape': ['Rectangle'],
     'Stock': ['16PT C2S'],
     'Coating' : ['Spot UV'],
-    'Lamination': ['Silk'],
-    'Spot UV Sides': ['Spot UV Front'],
+    'Spot UV Sides':['Spot UV Front'],
+    'Lamination': ['Velvet'],
     'Colorspec': ['4/0 (4 color front)'],
     'Runsize': [500,1000,2500,5000,10000],
-    'Scoring Options': ['Score in Half'],
-    'Slits': ['Moon Slits Bottom Panel','Moon Slits Right Panel','No Gift Cards Slits','Slide Slits Bottom Panel','Slide Slits Right Panel'],
-    'Blank Envelopes': ['Yes 500 Envelopes A7','Yes 1000 Envelopes A7','Yes 2500 Envelopes A7','Yes 5000 Envelopes A7','Yes 10000 Envelopes A7']
+    'Scoring Options':['Score in Half'],
+    'Slits': ['n/a'],
+    'Blank Envelopes': ['No Blank Envelopes','Yes 500 Envelopes A7','Yes 1000 Envelopes A7','Yes 5000 Envelopes A7','Yes 10000 Envelopes A7']
 }
 
-//------------size: 8.5 x 11----------------//
 let input14 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
-    'Size': ['8.5 x 11'],
-    'Product Orientation':['Horizontal','Vertical'],
+    'Majestic Type': ['Suede'],
+    'Size': ['7 x 10'],
     'Shape': ['Rectangle'],
     'Stock': ['16PT C2S'],
     'Coating' : ['Spot UV'],
-    'Lamination': ['Silk'],
-    'Spot UV Sides': ['Spot UV Front','Spot UV Back','Spot UV Both Sides'],
+    'Spot UV Sides':['Spot UV Front','Spot UV Back','Spot UV Both Sides'],
+    'Lamination': ['Velvet'],
     'Colorspec': ['4/1','4/4 (4 color both sides)'],
     'Runsize': [500,1000,2500,5000,10000],
-    'Scoring Options': ['Score in Half'],
-    'Slits': ['Moon Slits Bottom Panel','Moon Slits Right Panel','No Gift Cards Slits','Slide Slits Bottom Panel','Slide Slits Right Panel'],
-    'Blank Envelopes': ['Yes 500 Envelopes A9','Yes 1000 Envelopes A9','Yes 2500 Envelopes A9','Yes 5000 Envelopes A9','Yes 10000 Envelopes A9']
+    'Scoring Options':['Score in Half'],
+    'Slits': ['n/a'],
+    'Blank Envelopes': ['No Blank Envelopes','Yes 500 Envelopes A7','Yes 1000 Envelopes A7','Yes 5000 Envelopes A7','Yes 10000 Envelopes A7']
 }
+
+//-------------------size: 8.5 x 11--------------------//
+
+//A9
+//no coating
 let input15 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
+    'Majestic Type': ['Suede'],
     'Size': ['8.5 x 11'],
-    'Product Orientation':['Horizontal','Vertical'],
+    'Shape': ['Rectangle'],
+    'Stock': ['16PT C2S'],
+    'Coating' : ['No Coating'],
+    'Spot UV Sides':['n/a'],
+    'Lamination': ['Velvet'],
+    'Colorspec': ['4/0 (4 color front)','4/1','4/4 (4 color both sides)'],
+    'Runsize': [100,250,500,1000,2500,5000,10000],
+    'Scoring Options':['Score in Half'],
+    'Slits': ['n/a'],
+    'Blank Envelopes': ['No Blank Envelopes','Yes 100 Envelopes A9','Yes 250 Envelopes A9','Yes 500 Envelopes A9','Yes 1000 Envelopes A9','Yes 5000 Envelopes A9','Yes 10000 Envelopes A9']
+}
+
+//spot uv
+let input16 = {
+    'Product Type': ['Majestic'],
+    'Majestic Type': ['Suede'],
+    'Size': ['8.5 x 11'],
     'Shape': ['Rectangle'],
     'Stock': ['16PT C2S'],
     'Coating' : ['Spot UV'],
-    'Lamination': ['Silk'],
-    'Spot UV Sides': ['Spot UV Front'],
+    'Spot UV Sides':['Spot UV Front'],
+    'Lamination': ['Velvet'],
     'Colorspec': ['4/0 (4 color front)'],
     'Runsize': [500,1000,2500,5000,10000],
-    'Scoring Options': ['Score in Half'],
-    'Slits': ['Moon Slits Bottom Panel','Moon Slits Right Panel','No Gift Cards Slits','Slide Slits Bottom Panel','Slide Slits Right Panel'],
-    'Blank Envelopes': ['Yes 500 Envelopes A9','Yes 1000 Envelopes A9','Yes 2500 Envelopes A9','Yes 5000 Envelopes A9','Yes 10000 Envelopes A9']
+    'Scoring Options':['Score in Half'],
+    'Slits': ['n/a'],
+    'Blank Envelopes': ['No Blank Envelopes','Yes 500 Envelopes A9','Yes 1000 Envelopes A9','Yes 5000 Envelopes A9','Yes 10000 Envelopes A9']
 }
 
-
+let input17 = {
+    'Product Type': ['Majestic'],
+    'Majestic Type': ['Suede'],
+    'Size': ['8.5 x 11'],
+    'Shape': ['Rectangle'],
+    'Stock': ['16PT C2S'],
+    'Coating' : ['Spot UV'],
+    'Spot UV Sides':['Spot UV Front','Spot UV Back','Spot UV Both Sides'],
+    'Lamination': ['Velvet'],
+    'Colorspec': ['4/1','4/4 (4 color both sides)'],
+    'Runsize': [500,1000,2500,5000,10000],
+    'Scoring Options':['Score in Half'],
+    'Slits': ['n/a'],
+    'Blank Envelopes': ['No Blank Envelopes','Yes 500 Envelopes A9','Yes 1000 Envelopes A9','Yes 5000 Envelopes A9','Yes 10000 Envelopes A9']
+}
 
 module.exports = router

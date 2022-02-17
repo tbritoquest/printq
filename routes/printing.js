@@ -18,14 +18,14 @@ router.get('/menus', (req,res)=>{
 router.get('/greeting-cards/', (req,res)=>{
     let majesticType= Object.keys(req.query).length?req.query.q:''
 
-    if(majesticType){//silk,
+    if(majesticType){
         let data = getProducts(`greeting-cards-${majesticType}`)
         res.render('services/greeting-cards-type',{products:JSON.stringify(data),majesticType})
     }else{
         let data = getProducts('greeting-cards')
         res.render('services/greeting-cards',{products:JSON.stringify(data)})
     }
-    console.log("HELO")
+    
     console.log("REQ",req.query)
     
 })

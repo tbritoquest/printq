@@ -15,11 +15,11 @@
         <div class="select is-medium">
             <select onchange="getMajesticType(this.value)">
                 <!-- <option value="" disabled="" selected="">Select Majestic Type</option> -->
-                <option value="Akuafoil">Akuafoil</option>
-                <option value="Raised Foil">Raised Foil</option>
-                <option value="Raised Spot UV" <%= majesticType==='raised spot uv'? 'SELECTED':''%>>Raised Spot UV</option>
+                <option value="Akuafoil" <%= majesticType==='akuafoil'? 'SELECTED':''%>>Akuafoil</option>
+                <option value="RaisedFoil" <%= majesticType==='raisedfoil'? 'SELECTED':''%>>Raised Foil</option>
+                <option value="RaisedSpotUV" <%= majesticType==='raisedspotuv'? 'SELECTED':''%>>Raised Spot UV</option>
                 <option value="Silk" <%= majesticType==='silk'? 'SELECTED':''%>>Silk</option>
-                <option value="Suede">Suede</option>
+                <option value="Suede" <%= majesticType==='suede'? 'SELECTED':''%>>Suede</option>
             </select>
         </div>
     </div>
