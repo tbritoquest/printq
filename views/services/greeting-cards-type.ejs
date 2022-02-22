@@ -1,6 +1,6 @@
 
 <div id="gc-<%= majesticType %>">
-
+    <h1>Greeting Cards</h1>
      <!--PRODUCT TYPE-->
      <div class="field-perm"><label class="label">Product Type</label>
         <div class="select is-medium">
@@ -28,7 +28,7 @@
        
     </div>
 
-    <button onclick="goBackToQuestion(0)">Reset</button>
+    <button onclick="reset()">Reset</button>
 </div>
 
 <script>
@@ -193,6 +193,8 @@
         checkAnswer(currQ)
     }
 
-    
+    function reset(){
+        window.location= encodeURI(`/printing-products/greeting-cards/`)
+   }
 
 </script>

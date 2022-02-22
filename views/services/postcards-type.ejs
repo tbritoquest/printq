@@ -28,7 +28,8 @@
       
    </div>
 
-   <button onclick="goBackToQuestion(0)">Reset</button>
+   <!-- <button onclick="goBackToQuestion(0)">Reset</button> -->
+   <button onclick="reset()">Reset</button>
 </div>
 
 <script>
@@ -198,6 +199,9 @@
        checkAnswer(currQ)
    }
 
+   function reset(){
+    window.location= encodeURI(`/printing-products/postcards/`)
+   }
    
 
 </script>

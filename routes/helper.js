@@ -5,7 +5,7 @@ const fs = require('fs')
 router.get('/data', (req,res)=>{
 
     // EDIT THIS LINE ONLY
-    let inputs = [input,input2,input3,input4,input5,input6,input7,input8,input9,input10,input11,input12]
+    let inputs = [input,input2]
     //END 
 
     let questions = []
@@ -74,181 +74,35 @@ function merge(options, strArr){
 //------------------EDIT DATA BELOW --------------------------------//xs
 
 
-// coating: UV both sides, no coating
+
 let input = {
     'Product Type': ['Majestic'],
     'Majestic Type': ['Akuafoil'],
-    'Size': ['2.75 x 4.25','3.5 x 8.5'],
-    'Shape': ['Rectangle'],
-    'Radius of Corners': ['n/a'],
+    'Size': ['4 x 6','5 x 7'],
+    'Product Orientation': ['Horizontal','Vertical'],
     'Stock': ['16PT C2S'],
-    'Coating' : ['UV Both Sides','No Coating'],
-    'Spot UV Sides': ['n/a'],
-    'Colorspec': ['5/0 (4/0 with Foil on Front)','5/1 (4/1 with Foil on Front)','5/4 (4/4 with Foil on Front)','4/5 (4/4 with Foil on Back)','5/5 (4/4 with Foil on Both Sides)'],
-    'Runsize': [500,1000,2500,5000],
+    'Coating' : ['No Coating'],
+    'Lamination': ['Velvet'],
+    'Foil':['Gold Foil','Holographic','Silver Foil'],
+    'Raised Foil Side':['Raised Foil Front'],
+    'Colorspec': ['5/0 (4/0 with Foil on Front)','5/4 (4/4 with Foil on Front)'],
+    'Runsize': [100,250,500],
 }
 
-//----------------size: 3.5 x 8.5-------------------//
-
-// spot uv > spot uv front
 let input2 = {
     'Product Type': ['Majestic'],
     'Majestic Type': ['Akuafoil'],
-    'Size': ['3.5 x 8.5'],
-    'Shape': ['Rectangle'],
-    'Radius of Corners': ['n/a'],
+    'Size': ['4 x 6','5 x 7'],
+    'Product Orientation': ['Horizontal','Vertical'],
     'Stock': ['16PT C2S'],
-    'Coating' : ['Spot UV'],
-    'Spot UV Sides': ['Spot UV Front'],
-    'Colorspec': ['5/0 (4/0 with Foil on Front)','5/1 (4/1 with Foil on Front)','5/4 (4/4 with Foil on Front)','4/5 (4/4 with Foil on Back)','5/5 (4/4 with Foil on Both Sides)'],
-    'Runsize': [500,1000,2500,5000],
+    'Coating' : ['No Coating'],
+    'Lamination': ['Velvet'],
+    'Foil':['Gold Foil','Holographic','Silver Foil'],
+    'Raised Foil Side':['Raised Foil on both sides'],
+    'Colorspec': ['5/5 (4/4 with Foil on Both Sides)'],
+    'Runsize': [100,250,500],
 }
 
-//-----------------size: 4 x 6-----------------//
-
-// rectangle & rounded 4 corners
-
-let input3 = {
-    'Product Type': ['Majestic'],
-    'Majestic Type': ['Akuafoil'],
-    'Size': ['4 x 6','4.25 x 5.5','4.25 x 6','5 x 7'],
-    'Shape': ['Rectangle'],
-    'Radius of Corners': ['n/a'],
-    'Stock': ['16PT C2S'],
-    'Coating' : ['UV Both Sides','No Coating'],
-    'Spot UV Sides': ['n/a'],
-    'Colorspec': ['5/0 (4/0 with Foil on Front)','5/1 (4/1 with Foil on Front)','5/4 (4/4 with Foil on Front)','4/5 (4/4 with Foil on Back)','5/5 (4/4 with Foil on Both Sides)'],
-    'Runsize': [500,1000,2500,5000],
-}
-
-//spot uv > spot uv front > colorspec(5)
-let input4 = {
-    'Product Type': ['Majestic'],
-    'Majestic Type': ['Akuafoil'],
-    'Size': ['4 x 6','4.25 x 5.5','4.25 x 6','5 x 7'],
-    'Shape': ['Rectangle'],
-    'Radius of Corners': ['n/a'],
-    'Stock': ['16PT C2S'],
-    'Coating' : ['Spot UV'],
-    'Spot UV Sides': ['Spot UV Front'],
-    'Colorspec': ['5/0 (4/0 with Foil on Front)','5/1 (4/1 with Foil on Front)','5/4 (4/4 with Foil on Front)','4/5 (4/4 with Foil on Back)','5/5 (4/4 with Foil on Both Sides)'],
-    'Runsize': [500,1000,2500,5000],
-}
-
-//spot uv > spot uv back|both sides > colorspec(4)
-let input5 = {
-    'Product Type': ['Majestic'],
-    'Majestic Type': ['Akuafoil'],
-    'Size': ['4 x 6','4.25 x 5.5','4.25 x 6','5 x 7'],
-    'Shape': ['Rectangle'],
-    'Radius of Corners': ['n/a'],
-    'Stock': ['16PT C2S'],
-    'Coating' : ['Spot UV'],
-    'Spot UV Sides': ['Spot UV Back','Spot UV Both Sides'],
-    'Colorspec': ['5/1 (4/1 with Foil on Front)','5/4 (4/4 with Foil on Front)','4/5 (4/4 with Foil on Back)','5/5 (4/4 with Foil on Both Sides)'],
-    'Runsize': [500,1000,2500,5000],
-}
-
-//rounded 4 corners
-let input6 = {
-    'Product Type': ['Majestic'],
-    'Majestic Type': ['Akuafoil'],
-    'Size': ['4 x 6','4.25 x 5.5','4.25 x 6','5 x 7'],
-    'Shape': ['Rounded 4 Corners'],
-    'Radius of Corners': ['Rounded 1/4','Rounded 1/8'],
-    'Stock': ['16PT C2S'],
-    'Coating' : ['UV Both Sides','No Coating'],
-    'Spot UV Sides': ['n/a'],
-    'Colorspec': ['5/0 (4/0 with Foil on Front)','5/1 (4/1 with Foil on Front)','5/4 (4/4 with Foil on Front)','4/5 (4/4 with Foil on Back)','5/5 (4/4 with Foil on Both Sides)'],
-    'Runsize': [500,1000,2500,5000],
-}
-
-//spot uv > spot uv front > colorspec(5)
-let input7 = {
-    'Product Type': ['Majestic'],
-    'Majestic Type': ['Akuafoil'],
-    'Size': ['4 x 6','4.25 x 5.5','4.25 x 6','5 x 7'],
-    'Shape': ['Rounded 4 Corners'],
-    'Radius of Corners': ['Rounded 1/4','Rounded 1/8'],
-    'Stock': ['16PT C2S'],
-    'Coating' : ['Spot UV'],
-    'Spot UV Sides': ['Spot UV Front'],
-    'Colorspec': ['5/0 (4/0 with Foil on Front)','5/1 (4/1 with Foil on Front)','5/4 (4/4 with Foil on Front)','4/5 (4/4 with Foil on Back)','5/5 (4/4 with Foil on Both Sides)'],
-    'Runsize': [500,1000,2500,5000],
-}
-
-//spot uv > spot uv back|both sides > colorspec(4)
-let input8= {
-    'Product Type': ['Majestic'],
-    'Majestic Type': ['Akuafoil'],
-    'Size': ['4 x 6','4.25 x 5.5','4.25 x 6','5 x 7'],
-    'Shape': ['Rounded 4 Corners'],
-    'Radius of Corners': ['Rounded 1/4','Rounded 1/8'],
-    'Stock': ['16PT C2S'],
-    'Coating' : ['Spot UV'],
-    'Spot UV Sides': ['Spot UV Back','Spot UV Both Sides'],
-    'Colorspec': ['5/1 (4/1 with Foil on Front)','5/4 (4/4 with Foil on Front)','4/5 (4/4 with Foil on Back)','5/5 (4/4 with Foil on Both Sides)'],
-    'Runsize': [500,1000,2500,5000],
-}
-
-//----------------------size: 4 x 9----------------------------//
-
-//coating: no coating, uv both sides, spot uv
-let input9 = {
-    'Product Type': ['Majestic'],
-    'Majestic Type': ['Akuafoil'],
-    'Size': ['4 x 9','4.25 x 11','5.5 x 8.5','6 x 9','6 x 11'],
-    'Shape': ['Rectangle'],
-    'Radius of Corners': ['n/a'],
-    'Stock': ['16PT C2S'],
-    'Coating' : ['UV Both Sides','No Coating'],
-    'Spot UV Sides': ['n/a'],
-    'Colorspec': ['5/0 (4/0 with Foil on Front)','5/1 (4/1 with Foil on Front)','5/4 (4/4 with Foil on Front)','4/5 (4/4 with Foil on Back)','5/5 (4/4 with Foil on Both Sides)'],
-    'Runsize': [500,1000,2500,5000],
-}
-
-//spot uv > spot uv front > colorspec(5)
-let input10 = {
-    'Product Type': ['Majestic'],
-    'Majestic Type': ['Akuafoil'],
-    'Size': ['4 x 9','4.25 x 11','5.5 x 8.5','6 x 9','6 x 11'],
-    'Shape': ['Rectangle'],
-    'Radius of Corners': ['n/a'],
-    'Stock': ['16PT C2S'],
-    'Coating' : ['Spot UV'],
-    'Spot UV Sides': ['Spot UV Front'],
-    'Colorspec': ['5/0 (4/0 with Foil on Front)','5/1 (4/1 with Foil on Front)','5/4 (4/4 with Foil on Front)','4/5 (4/4 with Foil on Back)','5/5 (4/4 with Foil on Both Sides)'],
-    'Runsize': [500,1000,2500,5000],
-}
-
-//spot uv > spot uv back|both sides > colorspec(4)
-let input11 = {
-    'Product Type': ['Majestic'],
-    'Majestic Type': ['Akuafoil'],
-    'Size': ['4 x 9','4.25 x 11','5.5 x 8.5','6 x 9','6 x 11'],
-    'Shape': ['Rectangle'],
-    'Radius of Corners': ['n/a'],
-    'Stock': ['16PT C2S'],
-    'Coating' : ['Spot UV'],
-    'Spot UV Sides': ['Spot UV Back','Spot UV Both Sides'],
-    'Colorspec': ['5/1 (4/1 with Foil on Front)','5/4 (4/4 with Foil on Front)','4/5 (4/4 with Foil on Back)','5/5 (4/4 with Foil on Both Sides)'],
-    'Runsize': [500,1000,2500,5000],
-}
-
-//-------------------size: 8.5 x 3.5------------------------//
-
-let input12 = {
-    'Product Type': ['Majestic'],
-    'Majestic Type': ['Akuafoil'],
-    'Size': ['8.5 x 3.5'],
-    'Shape': ['Rectangle'],
-    'Radius of Corners': ['n/a'],
-    'Stock': ['16PT C2S'],
-    'Coating' : ['Spot UV'],
-    'Spot UV Sides': ['Spot UV Front'],
-    'Colorspec': ['5/0 (4/0 with Foil on Front)','5/1 (4/1 with Foil on Front)','5/4 (4/4 with Foil on Front)','4/5 (4/4 with Foil on Back)','5/5 (4/4 with Foil on Both Sides)'],
-    'Runsize': [500,1000,2500,5000],
-}
 
 
 
