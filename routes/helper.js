@@ -5,7 +5,7 @@ const fs = require('fs')
 router.get('/data', (req,res)=>{
 
     // EDIT THIS LINE ONLY
-    let inputs = [input,input2]
+    let inputs = [input,input2,input3,input4]
     //END 
 
     let questions = []
@@ -77,34 +77,60 @@ function merge(options, strArr){
 
 let input = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Akuafoil'],
-    'Size': ['4 x 6','5 x 7'],
-    'Product Orientation': ['Horizontal','Vertical'],
+    'Majestic Type': ['Raised Spot UV'],
+    'Size': ['4 x 6'],
     'Stock': ['16PT C2S'],
     'Coating' : ['No Coating'],
     'Lamination': ['Velvet'],
-    'Foil':['Gold Foil','Holographic','Silver Foil'],
-    'Raised Foil Side':['Raised Foil Front'],
-    'Colorspec': ['5/0 (4/0 with Foil on Front)','5/4 (4/4 with Foil on Front)'],
+    'Raised Spot UV Side': ['Raised Spot UV Front'],
+    'Raised Spot UV Height':['50 Microns'],
+    'Colorspec': ['4/0 (4 color front)','4/1','4/4 (4 color both sides)'],
+    'Drill Hole':['No Drill Hole','Standard Drill Hole 1/4','Standard Drill Hole 1/8'],
     'Runsize': [100,250,500],
 }
 
 let input2 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Akuafoil'],
-    'Size': ['4 x 6','5 x 7'],
-    'Product Orientation': ['Horizontal','Vertical'],
+    'Majestic Type': ['Raised Spot UV'],
+    'Size': ['4 x 6'],
     'Stock': ['16PT C2S'],
     'Coating' : ['No Coating'],
     'Lamination': ['Velvet'],
-    'Foil':['Gold Foil','Holographic','Silver Foil'],
-    'Raised Foil Side':['Raised Foil on both sides'],
-    'Colorspec': ['5/5 (4/4 with Foil on Both Sides)'],
+    'Raised Spot UV Side': ['Raised Spot UV on both sides'],
+    'Raised Spot UV Height':['50 Microns'],
+    'Colorspec': ['4/1','4/4 (4 color both sides)'],
+    'Drill Hole':['No Drill Hole','Standard Drill Hole 1/4','Standard Drill Hole 1/8'],
+    'Runsize': [100,250,500],
+}
+
+let input3 = {
+    'Product Type': ['Majestic'],
+    'Majestic Type': ['Raised Spot UV'],
+    'Size': ['5 x 7'],
+    'Stock': ['16PT C2S'],
+    'Coating' : ['No Coating'],
+    'Lamination': ['Velvet'],
+    'Raised Spot UV Side': ['Raised Spot UV Front'],
+    'Raised Spot UV Height':['50 Microns'],
+    'Colorspec': ['4/0 (4 color front)','4/1','4/4 (4 color both sides)'],
+    'Drill Hole':['n/a'],
     'Runsize': [100,250,500],
 }
 
 
-
+let input4 = {
+    'Product Type': ['Majestic'],
+    'Majestic Type': ['Raised Spot UV'],
+    'Size': ['5 x 7'],
+    'Stock': ['16PT C2S'],
+    'Coating' : ['No Coating'],
+    'Lamination': ['Velvet'],
+    'Raised Spot UV Side': ['Raised Spot UV on both sides'],
+    'Raised Spot UV Height':['50 Microns'],
+    'Colorspec': ['4/1','4/4 (4 color both sides)'],
+    'Drill Hole':['n/a'],
+    'Runsize': [100,250,500],
+}
 
 
 

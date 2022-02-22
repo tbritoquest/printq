@@ -1,109 +1,61 @@
-Product Type,Majestic Type,Size,Product Orientation,Stock,Coating,Lamination,Foil,Raised Foil Side,Colorspec,Runsize
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),100
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/0 (4/0 with Foil on Front),100
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/0 (4/0 with Foil on Front),100
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/0 (4/0 with Foil on Front),100
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/0 (4/0 with Foil on Front),100
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),100
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),100
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),100
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),100
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),100
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),100
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),100
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),100
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/4 (4/4 with Foil on Front),100
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/4 (4/4 with Foil on Front),100
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),100
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/4 (4/4 with Foil on Front),100
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),100
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),100
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),100
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),100
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),250
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),250
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),250
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),250
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/0 (4/0 with Foil on Front),250
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/0 (4/0 with Foil on Front),250
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/0 (4/0 with Foil on Front),250
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),250
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/0 (4/0 with Foil on Front),250
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),250
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),250
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),250
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),250
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),250
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),250
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),250
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),100
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/4 (4/4 with Foil on Front),250
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/4 (4/4 with Foil on Front),250
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/4 (4/4 with Foil on Front),250
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),250
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/4 (4/4 with Foil on Front),100
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),250
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),250
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),500
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),500
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),500
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/4 (4/4 with Foil on Front),250
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/0 (4/0 with Foil on Front),500
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/0 (4/0 with Foil on Front),500
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/0 (4/0 with Foil on Front),500
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/0 (4/0 with Foil on Front),500
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),500
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),500
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),500
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),500
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),100
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),500
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),500
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),500
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/4 (4/4 with Foil on Front),500
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/4 (4/4 with Foil on Front),500
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/4 (4/4 with Foil on Front),500
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Holographic,Raised Foil Front,5/4 (4/4 with Foil on Front),500
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),500
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),500
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),500
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),250
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),100
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),100
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),100
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),100
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/0 (4/0 with Foil on Front),500
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Holographic,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),100
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Holographic,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),100
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Holographic,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),100
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),100
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),100
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),100
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),100
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),250
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),250
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),250
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),250
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Holographic,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),100
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),500
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Holographic,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),250
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Holographic,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),250
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),250
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),250
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),250
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),250
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),500
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),500
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),500
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),500
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Gold Foil,Raised Foil Front,5/4 (4/4 with Foil on Front),500
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Holographic,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),500
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Holographic,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),500
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Holographic,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),500
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Holographic,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),500
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),500
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),500
-Majestic,Akuafoil,5 x 7,Vertical,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),500
-Majestic,Akuafoil,4 x 6,Horizontal,16PT C2S,No Coating,Velvet,Holographic,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),250
-Majestic,Akuafoil,4 x 6,Vertical,16PT C2S,No Coating,Velvet,Silver Foil,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),500
-Majestic,Akuafoil,5 x 7,Horizontal,16PT C2S,No Coating,Velvet,Holographic,Raised Foil on both sides,5/5 (4/4 with Foil on Both Sides),250
+Product Type,Majestic Type,Size,Stock,Coating,Lamination,Raised Spot UV Side,Raised Spot UV Height,Colorspec,Drill Hole,Runsize
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/0 (4 color front),Standard Drill Hole 1/4,100
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/1,Standard Drill Hole 1/4,100
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/4 (4 color both sides),Standard Drill Hole 1/4,100
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/0 (4 color front),Standard Drill Hole 1/8,100
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/4 (4 color both sides),No Drill Hole,100
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/4 (4 color both sides),Standard Drill Hole 1/8,100
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/0 (4 color front),No Drill Hole,250
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/1,No Drill Hole,250
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/4 (4 color both sides),No Drill Hole,250
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/0 (4 color front),Standard Drill Hole 1/4,250
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/0 (4 color front),No Drill Hole,100
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/0 (4 color front),Standard Drill Hole 1/8,250
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/4 (4 color both sides),Standard Drill Hole 1/4,250
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/1,Standard Drill Hole 1/8,250
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/1,No Drill Hole,100
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/0 (4 color front),No Drill Hole,500
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/1,No Drill Hole,500
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/4 (4 color both sides),No Drill Hole,500
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/0 (4 color front),Standard Drill Hole 1/4,500
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/1,Standard Drill Hole 1/4,500
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/4 (4 color both sides),Standard Drill Hole 1/4,500
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/0 (4 color front),Standard Drill Hole 1/8,500
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/1,Standard Drill Hole 1/8,500
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/1,Standard Drill Hole 1/8,100
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/1,No Drill Hole,100
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/4 (4 color both sides),No Drill Hole,100
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/1,Standard Drill Hole 1/4,100
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/4 (4 color both sides),Standard Drill Hole 1/4,100
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/4 (4 color both sides),Standard Drill Hole 1/8,500
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/4 (4 color both sides),Standard Drill Hole 1/8,100
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/1,No Drill Hole,250
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/1,Standard Drill Hole 1/8,100
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/1,Standard Drill Hole 1/4,250
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/4 (4 color both sides),Standard Drill Hole 1/4,250
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/1,Standard Drill Hole 1/8,250
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/4 (4 color both sides),Standard Drill Hole 1/8,250
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/1,No Drill Hole,500
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/1,Standard Drill Hole 1/4,250
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/1,Standard Drill Hole 1/4,500
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/4 (4 color both sides),No Drill Hole,500
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/1,Standard Drill Hole 1/8,500
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/4 (4 color both sides),Standard Drill Hole 1/8,500
+Majestic,Raised Spot UV,5 x 7,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/0 (4 color front),n/a,100
+Majestic,Raised Spot UV,5 x 7,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/1,n/a,100
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/4 (4 color both sides),No Drill Hole,250
+Majestic,Raised Spot UV,5 x 7,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/0 (4 color front),n/a,250
+Majestic,Raised Spot UV,5 x 7,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/1,n/a,250
+Majestic,Raised Spot UV,5 x 7,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/4 (4 color both sides),n/a,250
+Majestic,Raised Spot UV,5 x 7,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/0 (4 color front),n/a,500
+Majestic,Raised Spot UV,5 x 7,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/1,n/a,500
+Majestic,Raised Spot UV,5 x 7,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/4 (4 color both sides),n/a,500
+Majestic,Raised Spot UV,5 x 7,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/1,n/a,100
+Majestic,Raised Spot UV,5 x 7,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/4 (4 color both sides),n/a,100
+Majestic,Raised Spot UV,5 x 7,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/1,n/a,250
+Majestic,Raised Spot UV,5 x 7,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/4 (4 color both sides),n/a,250
+Majestic,Raised Spot UV,5 x 7,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/1,n/a,500
+Majestic,Raised Spot UV,5 x 7,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/4 (4 color both sides),n/a,500
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV on both sides,50 Microns,4/4 (4 color both sides),Standard Drill Hole 1/4,500
+Majestic,Raised Spot UV,4 x 6,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/4 (4 color both sides),Standard Drill Hole 1/8,250
+Majestic,Raised Spot UV,5 x 7,16PT C2S,No Coating,Velvet,Raised Spot UV Front,50 Microns,4/4 (4 color both sides),n/a,100
