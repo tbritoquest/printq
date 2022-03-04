@@ -1,0 +1,202 @@
+
+<div id="bc-<%= majesticType %>">
+    <h1>Business Cards</h1>
+     <!--PRODUCT TYPE-->
+     <div class="field-perm"><label class="label">Product Type</label>
+        <div class="select is-medium">
+            <select>
+                <option value="Majestic">Majestic</option>
+            </select>
+        </div>
+    </div>
+    <!--MAJESTIC TYPE-->
+    <div class="field-perm">
+         <label class="label">Majestic Type</label>
+        <div class="select is-medium">
+            <select onchange="getMajesticType(this.value)">
+                <!-- <option value="" disabled="" selected="">Select Majestic Type</option> -->
+                <option value="PaintedEdge" <%= majesticType==='paintededge'? 'SELECTED':''%>>Painted Edge</option>
+                <option value="FoilWorx" <%= majesticType==='foilworx'? 'SELECTED':''%>>Foil Worx</option>
+                <option value="Akuafoil" <%= majesticType==='akuafoil'? 'SELECTED':''%>>Akuafoil</option>
+                <option value="RaisedFoil" <%= majesticType==='raisedfoil'? 'SELECTED':''%>>Raised Foil</option>
+                <option value="RaisedSpotUV" <%= majesticType==='raisedspotuv'? 'SELECTED':''%>>Raised Spot UV</option>
+                <option value="Silk" <%= majesticType==='silk'? 'SELECTED':''%>>Silk</option>
+    
+            </select>
+        </div>
+    </div>
+    
+    <div id="form-fields">
+       
+    </div>
+
+    <button onclick="reset()">Reset</button>
+</div>
+
+<script>
+
+    function getMajesticType(val){
+        window.location= encodeURI(`/printing-products/business-cards/?q=${val.toLowerCase()}`)
+    }
+
+    const SERVICE = "bc-<%=majesticType%>"
+    // GET DATA
+    let strObj = '<%-products%>'
+
+    //PARSE DATA
+    let jsonStr = strObj.replace(/(\w+:)|(\w+ :)/g, function(s) {
+    return '"' + s.substring(0, s.length-1) + '":';
+    });
+
+    let products = JSON.parse(jsonStr);
+    
+    //INITIALIZE FORM
+    
+    //a. get questions
+    let questions = []
+    for(const prop in products[0]){
+        questions.push(prop)
+    }
+    
+    //b. get results
+    let results = products
+    let resultsAtQuestion = [results]
+
+    // c. Get all possible options pertaining to current question AND Results
+    let currQ = 0
+    let hierarchy =[]
+
+    let set = new Set()
+    for(let i=0;i<results.length;i++){
+        set.add(results[i][questions[currQ]].trim())
+    }
+        
+    hierarchy.push(set)
+    
+    displayQuestion()
+    checkAnswer(currQ)
+
+    // HELPER METHODS
+    
+    function displayQuestion(){
+        console.log("hierarchy: ",hierarchy)
+        createFormField()
+
+        let qEl = document.querySelector(`#${SERVICE} #form-fields > div:last-child > label`)
+        qEl.innerText = questions[currQ]
+       
+        let select = document.querySelector(`#${SERVICE} #form-fields > div:last-child > div > select`)
+
+        //set default option
+        if(set.size>1){
+            select.innerHTML = `<option value="" disabled selected>Select ${questions[currQ]}</option>`
+        }
+
+        for (let iter = set.values(), val= null; val=iter.next().value; ) {
+            let optionEl = document.createElement('option');
+            optionEl.value = val; //?
+            optionEl.innerHTML = val;
+            select.appendChild(optionEl);
+        }
+
+        //unique to business cards. 
+        //hide first two questions
+        if(currQ===0 || currQ===1){
+            console.log("hide: ",currQ)
+            document.getElementsByClassName("field")[currQ].style.display = "none"
+        }
+
+    }
+
+    function createFormField(){
+        let destinationEl = document.querySelector(`#${SERVICE} #form-fields`)
+        let formFieldHTML = createElementFromHTML(`<label class="label">test</label><div class="select is-medium"><select onchange="checkAnswer(${currQ})"></select></div>`, "field")
+        destinationEl.appendChild(formFieldHTML)
+    }
+
+
+    function checkAnswer(id){
+        if(currQ>=questions.length){
+            console.log("No more questions")
+            return
+        }
+
+        if(id<currQ){
+            goBackToQuestion(id)
+            return
+        }
+    
+        if(hierarchy[currQ].size>1){ // case 2: user has many options. runs only in the event that user selects an option
+            console.log("checkAnswer: case 2")
+            let selectElement = document.querySelector(`#${SERVICE} #form-fields > div:last-child > div > select`)
+            let answer = selectElement.options[selectElement.selectedIndex].value
+
+            //Generate Results 
+            let newResults = []
+            for(let i=0;i<results.length;i++){
+                if(results[i][questions[currQ]] == answer){
+                    newResults.push(results[i])
+                }
+            }
+            resultsAtQuestion[currQ] = results
+            results = newResults
+            // Check if we're done with form
+            if(results.length<2){ // DONE
+                console.log("final result: ", results)
+                console.log("hierarchy: ", hierarchy)
+                return
+            }
+            
+        }
+
+        generateNextQuestion()
+    }
+
+
+
+    function createElementFromHTML(htmlString, className=null) {
+        let div = document.createElement('div')
+        if(className) div.className = className
+        div.innerHTML = htmlString.trim()
+        return div;
+    }
+
+    function generateNextQuestion(){
+        currQ +=1
+        //Get the next question's options
+        set = new Set() 
+        for(let i=0;i<results.length;i++){
+            set.add(results[i][questions[currQ]].toString().trim())
+        }
+        hierarchy.push(set)
+        
+        displayQuestion()
+        // case 1: user has only 1 option, move on to next question
+        if(hierarchy[currQ].size<2){
+            resultsAtQuestion[currQ] = results
+            generateNextQuestion()
+        }
+    }
+
+    function goBackToQuestion(id){
+        console.log("goBackToQuestion: ", id)
+        results = resultsAtQuestion[id]
+        currQ = id
+        hierarchy.length = currQ+1
+
+        // remove other questions
+        let list = document.querySelectorAll(`#${SERVICE} #form-fields > div`)
+        list  = [...list].slice(id+1)
+        let destinationEl = document.querySelector(`#${SERVICE} #form-fields`)
+        for(let i=0;i<list.length;i++){
+            destinationEl.removeChild(list[i])
+        }
+       
+        checkAnswer(currQ)
+    }
+
+    function reset(){
+        window.location= encodeURI(`/printing-products/business-cards/`)
+   }
+
+</script>

@@ -45,6 +45,21 @@ router.get('/postcards/', (req,res)=>{
     
 })
 
+router.get('/business-cards/', (req,res)=>{
+    let majesticType= Object.keys(req.query).length?req.query.q:''
+
+    if(majesticType){
+        let data = getProducts(`business-cards-${majesticType}`)
+        res.render('services/business-cards-type',{products:JSON.stringify(data),majesticType})
+    }else{
+        let data = getProducts('business-cards')
+        console.log(data)
+        res.render('services/business-cards',{products:JSON.stringify(data)})
+    }
+    
+    console.log("REQ",req.query)
+})
+
 
 // router.get('/greeting-cards/:majesticType',(req,res)=>{
 //     console.log("hello")

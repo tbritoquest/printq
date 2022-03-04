@@ -1,0 +1,39 @@
+<div class="column">         
+    <div id="business">
+        <div id="form-fields">
+            <h1>Business Cards(M)</h1>
+            <div class="field"><label class="label">Product Type</label>
+                <div class="select is-medium">
+                    <select onchange="checkAnswer(0)">
+                        <option value="Majestic">Majestic</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field">
+                 <label class="label">Majestic Type</label>
+                <div class="select is-medium">
+                    <select onchange="getMajesticType(this.value)">
+                        <option value="" disabled="" selected="">Select Majestic Type</option>
+                        <option value="PaintedEdge">Painted Edge</option>
+                        <option value="FoilWorx">Foil Worx</option>
+                        <option value="Akuafoil">Akuafoil</option>
+                        <option value="RaisedFoil">Raised Foil</option>
+                        <option value="RaisedSpotUV">Raised Spot UV</option>
+                        <option value="Silk">Silk</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+   
+</div>
+
+<script>
+
+    function getMajesticType(val){
+        window.location= encodeURI(`/printing-products/business-cards/?q=${val.toLowerCase()}`)
+    }
+
+</script>
