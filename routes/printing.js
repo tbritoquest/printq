@@ -49,16 +49,16 @@ router.get('/business-cards/', (req,res)=>{
     let majesticType= Object.keys(req.query).length?req.query.q:''
 
     if(majesticType){
-        console.log("hello")
         let data = getProducts(`business-cards-${majesticType}`)
+        console.log(data)
         res.render('services/business-cards-type',{products:JSON.stringify(data),majesticType})
     }else{
         let data = getProducts('business-cards')
-        console.log(data)
+        console.log(JSON.stringify(data))
         res.render('services/business-cards',{products:JSON.stringify(data)})
     }
     
-    console.log("REQ",req.query)
+    // console.log("REQ",req.query)
 })
 
 

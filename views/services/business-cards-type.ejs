@@ -47,7 +47,7 @@
     let jsonStr = strObj.replace(/(\w+:)|(\w+ :)/g, function(s) {
     return '"' + s.substring(0, s.length-1) + '":';
     });
-
+    
     let products = JSON.parse(jsonStr);
     
     //INITIALIZE FORM

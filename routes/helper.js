@@ -82,7 +82,7 @@ let input = {
     'Coating' : ['No Coating'],
     'Lamination':['Velvet'],
     'Raised Spot UV Side':['Raised Spot UV Front','Raised Spot UV on both sides'],
-    'Raised Spot UV Height:': ['50 Microns'],
+    'Raised Spot UV Height': ['50 Microns'],
     'Colorspec': ['4/1','4/4 (4 color both sides)'],
     'Runsize': [100,250,500],
 }
@@ -96,7 +96,7 @@ let input2 = {
     'Coating' : ['No Coating'],
     'Lamination':['Velvet'],
     'Raised Spot UV Side':['Raised Spot UV Front'],
-    'Raised Spot UV Height:': ['50 Microns'],
+    'Raised Spot UV Height': ['50 Microns'],
     'Colorspec': ['4/0 (4 color front)'],
     'Runsize': [100,250,500],
 }
