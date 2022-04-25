@@ -41,13 +41,15 @@
    const SERVICE = "pc-<%=majesticType%>"
    // GET DATA
    let strObj = '<%-products%>'
-
+   console.log(strObj)
    //PARSE DATA
    let jsonStr = strObj.replace(/(\w+:)|(\w+ :)/g, function(s) {
    return '"' + s.substring(0, s.length-1) + '":';
    });
 
    let products = JSON.parse(jsonStr);
+
+   console.log(products)
    
    //INITIALIZE FORM
    
@@ -125,6 +127,7 @@
            return
        }
    
+       console.log("CurrQ: ", currQ)
        if(hierarchy[currQ].size>1){ // case 2: user has many options. runs only in the event that user selects an option
            console.log("checkAnswer: case 2")
            let selectElement = document.querySelector(`#${SERVICE} #form-fields > div:last-child > div > select`)

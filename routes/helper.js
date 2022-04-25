@@ -73,33 +73,31 @@ function merge(options, strArr){
 
 //------------------EDIT DATA BELOW --------------------------------//
 
-// Raised Foil Front
+// 4/1 & 4/4
 let input = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Raised Foil'],
+    'Majestic Type': ['Raised Spot UV'],
     'Size': ['2 x 3.5'],
-    'Product Orientation':['Horizontal','Vertical'],
     'Stock': ['16PT C2S'],
     'Coating' : ['No Coating'],
     'Lamination':['Velvet'],
-    'Foil Color':['Gold Foil','Holographic','Silver Foil'],
-    'Raised Foil Side':['Raised Foil Front'],
-    'Colorspec': ['5/0 (4/0 with Foil on Front)','5/1 (4/1 with Foil on Front)','5/4 (4/4 with Foil on Front)'],
+    'Raised Spot UV Side':['Raised Spot UV Front','Raised Spot UV on both sides'],
+    'Raised Spot UV Height:': ['50 Microns'],
+    'Colorspec': ['4/1','4/4 (4 color both sides)'],
     'Runsize': [100,250,500],
 }
 
-//Raised Foil on both sides
+//  4/0 (4 color front)
 let input2 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Raised Foil'],
+    'Majestic Type': ['Raised Spot UV'],
     'Size': ['2 x 3.5'],
-    'Product Orientation':['Horizontal','Vertical'],
     'Stock': ['16PT C2S'],
     'Coating' : ['No Coating'],
     'Lamination':['Velvet'],
-    'Foil Color':['Gold Foil','Holographic','Silver Foil'],
-    'Raised Foil Side':['Raised Foil on both sides'],
-    'Colorspec': ['5/5 (4/4 with Foil on Both Sides'],
+    'Raised Spot UV Side':['Raised Spot UV Front'],
+    'Raised Spot UV Height:': ['50 Microns'],
+    'Colorspec': ['4/0 (4 color front)'],
     'Runsize': [100,250,500],
 }
 

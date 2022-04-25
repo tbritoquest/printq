@@ -49,6 +49,7 @@ router.get('/business-cards/', (req,res)=>{
     let majesticType= Object.keys(req.query).length?req.query.q:''
 
     if(majesticType){
+        console.log("hello")
         let data = getProducts(`business-cards-${majesticType}`)
         res.render('services/business-cards-type',{products:JSON.stringify(data),majesticType})
     }else{
@@ -88,7 +89,8 @@ function getProducts(name){
     temp.forEach((res) => {
         data.push(res)
     })
-    }
+    console.log("FILE: ", file)
+}
     
 
     return data
