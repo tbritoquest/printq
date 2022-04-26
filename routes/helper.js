@@ -5,7 +5,7 @@ const fs = require('fs')
 router.get('/data', (req,res)=>{
 
     // EDIT THIS LINE ONLY
-    let inputs = [input,input2,input3,input4,input5,input6,input7,input8,input9,input10,input11,input12,input13,input14,input15,input16]
+    let inputs = [input,input2,input3,input4,input5,input6,input7,input8,input9,input10,input11,input12,input13,input14]
     //END 
 
     let questions = []
@@ -76,279 +76,216 @@ function merge(options, strArr){
 // Rectangle , No coating
 let input = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
-    'Size': ['1.5 x 3.5','1.75 x 3.5','2 x 3','2 x 3.5','2 x 7','2.125 x 3.375'],
-    'Product Orientation' : ['Horizontal','Vertical'],
+    'Majestic Type': ['Suede'],
+    'Size': ['1.5 x 3.5','1.75 x 3.5','2 x 3','2 x 3.5','2 x 4','2.125 x 3.375'],
     'Shape' : ['Rectangle'],
     'Stock': ['16PT C2S'],
     'Radius of Corners': ['n/a'],
     'Coating' : ['No Coating'],
     'Spot UV Sides' : ['n/a'],
-    'Lamination':['Silk'],
+    'Lamination':['Velvet'],
     'Colorspec': ['4/0 (4 color front)','4/1','4/4 (4 color both sides)'],
-    'Runsize': [25,50,75,100,250,500,1000,2500,5000,10000],
-    'Scoring Options' : ['n/a']
+    'Runsize': [100,250,500,1000,2500,5000,10000]
 }
 
 // rectangle, spot uv , 4/1 & 4/4
 let input2 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
-    'Size': ['1.5 x 3.5','1.75 x 3.5','2 x 3','2 x 3.5','2 x 7','2.125 x 3.375'],
-    'Product Orientation' : ['Horizontal','Vertical'],
+    'Majestic Type': ['Suede'],
+    'Size': ['1.5 x 3.5','1.75 x 3.5','2 x 3','2 x 3.5','2 x 4','2.125 x 3.375'],
     'Shape' : ['Rectangle'],
     'Stock': ['16PT C2S'],
     'Radius of Corners': ['n/a'],
     'Coating' : ['Spot UV'],
     'Spot UV Sides' : ['Spot UV Front','Spot UV Back','Spot UV Both Sides'],
-    'Lamination':['Silk'],
+    'Lamination':['Velvet'],
     'Colorspec': ['4/1','4/4 (4 color both sides)'],
-    'Runsize': [500,1000,2500,5000,10000],
-    'Scoring Options' : ['n/a']
+    'Runsize': [500,1000,2500,5000,10000]
 }
 
 // rectangle, spot uv , 4/0
 let input3 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
-    'Size': ['1.5 x 3.5','1.75 x 3.5','2 x 3','2 x 3.5','2 x 7','2.125 x 3.375'],
-    'Product Orientation' : ['Horizontal','Vertical'],
+    'Majestic Type': ['Suede'],
+    'Size': ['1.5 x 3.5','1.75 x 3.5','2 x 3','2 x 3.5','2 x 4','2.125 x 3.375'],
     'Shape' : ['Rectangle'],
     'Stock': ['16PT C2S'],
     'Radius of Corners': ['n/a'],
     'Coating' : ['Spot UV'],
     'Spot UV Sides' : ['Spot UV Front'],
-    'Lamination':['Silk'],
+    'Lamination':['Velvet'],
     'Colorspec': ['4/0 (4 color front)'],
-    'Runsize': [500,1000,2500,5000,10000],
-    'Scoring Options' : ['n/a']
+    'Runsize': [500,1000,2500,5000,10000]
 }
 
 
 // Rounded 2 || 4 Corners , No coating
 let input4 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
-    'Size': ['1.5 x 3.5','1.75 x 3.5','2 x 3.5','2.125 x 3.375'],
-    'Product Orientation' : ['Horizontal','Vertical'],
+    'Majestic Type': ['Suede'],
+    'Size': ['1.5 x 3.5','2 x 3.5','2.125 x 3.375'],
     'Shape' : ['Rounded 2 Corners','Rounded 4 Corners'],
     'Stock': ['16PT C2S'],
     'Radius of Corners' : ['Rounded 1/4 inch','Rounded 1/8 inch'],
     'Coating' : ['No Coating'],
     'Spot UV Sides' : ['n/a'],
-    'Lamination':['Silk'],
+    'Lamination':['Velvet'],
     'Colorspec': ['4/0 (4 color front)','4/1','4/4 (4 color both sides)'],
-    'Runsize': [25,50,75,100,250,500,1000,2500,5000,10000],
-    'Scoring Options' : ['n/a']
+    'Runsize': [100,250,500,1000,2500,5000,10000]
 }
 
 // Rounded 2 || 4 Corners, spot uv , 4/1 & 4/4
 let input5 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
-    'Size': ['1.5 x 3.5','1.75 x 3.5','2 x 3.5','2.125 x 3.375'],
-    'Product Orientation' : ['Horizontal','Vertical'],
+    'Majestic Type': ['Suede'],
+    'Size': ['1.5 x 3.5','2 x 3.5','2.125 x 3.375'],
     'Shape' : ['Rounded 2 Corners','Rounded 4 Corners'],
     'Stock': ['16PT C2S'],
     'Radius of Corners' : ['Rounded 1/4 inch','Rounded 1/8 inch'],
     'Coating' : ['Spot UV'],
     'Spot UV Sides' : ['Spot UV Front','Spot UV Back','Spot UV Both Sides'],
-    'Lamination':['Silk'],
+    'Lamination':['Velvet'],
     'Colorspec': ['4/1','4/4 (4 color both sides)'],
-    'Runsize': [500,1000,2500,5000,10000],
-    'Scoring Options' : ['n/a']
+    'Runsize': [500,1000,2500,5000,10000]
 }
 
 // Rounded 2 || 4 Corners, spot uv , 4/0
 let input6 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
-    'Size': ['1.5 x 3.5','1.75 x 3.5','2 x 3.5','2.125 x 3.375'],
-    'Product Orientation' : ['Horizontal','Vertical'],
+    'Majestic Type': ['Suede'],
+    'Size': ['1.5 x 3.5','2 x 3.5','2.125 x 3.375'],
     'Shape' : ['Rounded 2 Corners','Rounded 4 Corners'],
     'Stock': ['16PT C2S'],
     'Radius of Corners' : ['Rounded 1/4 inch','Rounded 1/8 inch'],
     'Coating' : ['Spot UV'],
     'Spot UV Sides' : ['Spot UV Front'],
-    'Lamination':['Silk'],
+    'Lamination':['Velvet'],
     'Colorspec': ['4/0 (4 color front)'],
-    'Runsize': [500,1000,2500,5000,10000],
-    'Scoring Options' : ['n/a']
+    'Runsize': [500,1000,2500,5000,10000]
 }
 
 // Square. no coating
 let input7 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
+    'Majestic Type': ['Suede'],
     'Size': ['2 x 2','2.5 x 2.5'],
-    'Product Orientation' : ['Horizontal','Vertical'],
     'Shape' : ['Square'],
     'Stock': ['16PT C2S'],
     'Radius of Corners' : ['n/a'],
     'Coating' : ['No Coating'],
     'Spot UV Sides' : ['n/a'],
-    'Lamination':['Silk'],
+    'Lamination':['Velvet'],
     'Colorspec': ['4/0 (4 color front)','4/1','4/4 (4 color both sides)'],
-    'Runsize': [25,50,75,100,250,500,1000,2500,5000,10000],
-    'Scoring Options' : ['n/a']
+    'Runsize': [100,250,500,1000,2500,5000,10000]
 }
 
 // Square, spot uv , 4/1 & 4/4
 let input8 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
+    'Majestic Type': ['Suede'],
     'Size': ['2 x 2','2.5 x 2.5'],
-    'Product Orientation' : ['Horizontal','Vertical'],
     'Shape' : ['Square'],
     'Stock': ['16PT C2S'],
     'Radius of Corners': ['n/a'],
     'Coating' : ['Spot UV'],
     'Spot UV Sides' : ['Spot UV Front','Spot UV Back','Spot UV Both Sides'],
-    'Lamination':['Silk'],
+    'Lamination':['Velvet'],
     'Colorspec': ['4/1','4/4 (4 color both sides)'],
-    'Runsize': [500,1000,2500,5000,10000],
-    'Scoring Options' : ['n/a']
+    'Runsize': [500,1000,2500,5000,10000]
 }
 
 // Square, spot uv , 4/0
 let input9 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
+    'Majestic Type': ['Suede'],
     'Size': ['2 x 2','2.5 x 2.5'],
-    'Product Orientation' : ['Horizontal','Vertical'],
     'Shape' : ['Square'],
     'Stock': ['16PT C2S'],
     'Radius of Corners': ['n/a'],
     'Coating' : ['Spot UV'],
     'Spot UV Sides' : ['Spot UV Front'],
-    'Lamination':['Silk'],
+    'Lamination':['Velvet'],
     'Colorspec': ['4/0 (4 color front)'],
-    'Runsize': [500,1000,2500,5000,10000],
-    'Scoring Options' : ['n/a']
+    'Runsize': [500,1000,2500,5000,10000]
 }
 
-//-----------------size: 2 x 3.5---------------------//
-
-// Oval, No coating
-let input10 = {
-    'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
-    'Size': ['2 x 3.5'],
-    'Product Orientation' : ['Horizontal','Vertical'],
-    'Shape' : ['Oval'],
-    'Stock': ['16PT C2S'],
-    'Radius of Corners': ['n/a'],
-    'Coating' : ['No Coating'],
-    'Spot UV Sides' : ['n/a'],
-    'Lamination':['Silk'],
-    'Colorspec': ['4/0 (4 color front)','4/1','4/4 (4 color both sides)'],
-    'Runsize': [25,50,75,100,250,500,1000,2500,5000,10000],
-    'Scoring Options' : ['n/a']
-}
-
-//-----------------size: 2.5 x 2.5---------------------//
+//-----------------size: 1.75 x 3.5---------------------//
 
 // Rounded 4 Corners , No coating
-let input11 = {
+let input10 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
-    'Size': ['2.5 x 2.5'],
-    'Product Orientation' : ['Horizontal','Vertical'],
+    'Majestic Type': ['Suede'],
+    'Size': ['1.75 x 3.5','2.5 x 2.5'],
     'Shape' : ['Rounded 4 Corners'],
     'Stock': ['16PT C2S'],
     'Radius of Corners' : ['Rounded 1/4 inch','Rounded 1/8 inch'],
     'Coating' : ['No Coating'],
     'Spot UV Sides' : ['n/a'],
-    'Lamination':['Silk'],
+    'Lamination':['Velvet'],
     'Colorspec': ['4/0 (4 color front)','4/1','4/4 (4 color both sides)'],
-    'Runsize': [25,50,75,100,250,500,1000,2500,5000,10000],
-    'Scoring Options' : ['n/a']
+    'Runsize': [100,250,500,1000,2500,5000,10000]
 }
 
 // Rounded 4 Corners, spot uv , 4/1 & 4/4
-let input12 = {
+let input11 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
-    'Size': ['2.5 x 2.5'],
-    'Product Orientation' : ['Horizontal','Vertical'],
+    'Majestic Type': ['Suede'],
+    'Size': ['1.75 x 3.5','2.5 x 2.5'],
     'Shape' : ['Rounded 4 Corners'],
     'Stock': ['16PT C2S'],
     'Radius of Corners' : ['Rounded 1/4 inch','Rounded 1/8 inch'],
     'Coating' : ['Spot UV'],
     'Spot UV Sides' : ['Spot UV Front','Spot UV Back','Spot UV Both Sides'],
-    'Lamination':['Silk'],
+    'Lamination':['Velvet'],
     'Colorspec': ['4/1','4/4 (4 color both sides)'],
-    'Runsize': [500,1000,2500,5000,10000],
-    'Scoring Options' : ['n/a']
+    'Runsize': [500,1000,2500,5000,10000]
 }
 
 // Rounded 4 Corners, spot uv , 4/0
-let input13 = {
+let input12 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
-    'Size': ['2.5 x 2.5'],
-    'Product Orientation' : ['Horizontal','Vertical'],
+    'Majestic Type': ['Suede'],
+    'Size': ['1.75 x 3.5','2.5 x 2.5'],
     'Shape' : ['Rounded 4 Corners'],
     'Stock': ['16PT C2S'],
     'Radius of Corners' : ['Rounded 1/4 inch','Rounded 1/8 inch'],
     'Coating' : ['Spot UV'],
     'Spot UV Sides' : ['Spot UV Front'],
-    'Lamination':['Silk'],
+    'Lamination':['Velvet'],
     'Colorspec': ['4/0 (4 color front)'],
-    'Runsize': [500,1000,2500,5000,10000],
-    'Scoring Options' : ['n/a']
+    'Runsize': [500,1000,2500,5000,10000]
 }
 
-//-------------------size: 3.5 x 4------------------//
-// Rectangle , No coating
-let input14 = {
-    'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
-    'Size': ['3.5 x 4'],
-    'Product Orientation' : ['Horizontal','Vertical'],
-    'Shape' : ['Rectangle'],
-    'Stock': ['16PT C2S'],
-    'Radius of Corners': ['n/a'],
-    'Coating' : ['No Coating'],
-    'Spot UV Sides' : ['n/a'],
-    'Lamination':['Silk'],
-    'Colorspec': ['4/0 (4 color front)','4/1','4/4 (4 color both sides)'],
-    'Runsize': [25,50,75,100,250,500,1000,2500,5000,10000],
-    'Scoring Options' : ['Score in Half']
-}
-
+//-----------------3.5 x 4--------------------------//
 // rectangle, spot uv , 4/1 & 4/4
-let input15 = {
+let input13 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
+    'Majestic Type': ['Suede'],
     'Size': ['3.5 x 4'],
-    'Product Orientation' : ['Horizontal','Vertical'],
     'Shape' : ['Rectangle'],
     'Stock': ['16PT C2S'],
     'Radius of Corners': ['n/a'],
     'Coating' : ['Spot UV'],
-    'Spot UV Sides' : ['Spot UV Front','Spot UV Back','Spot UV Both Sides'],
-    'Lamination':['Silk'],
+    'Spot UV Sides' : ['Spot UV Front','Spot UV Both Sides'],
+    'Lamination':['Velvet'],
     'Colorspec': ['4/1','4/4 (4 color both sides)'],
-    'Runsize': [500,1000,2500,5000,10000],
-    'Scoring Options' : ['Score in Half']
+    'Runsize': [500,1000,2500,5000,10000]
 }
 
 // rectangle, spot uv , 4/0
-let input16 = {
+let input14 = {
     'Product Type': ['Majestic'],
-    'Majestic Type': ['Silk'],
+    'Majestic Type': ['Suede'],
     'Size': ['3.5 x 4'],
-    'Product Orientation' : ['Horizontal','Vertical'],
     'Shape' : ['Rectangle'],
     'Stock': ['16PT C2S'],
     'Radius of Corners': ['n/a'],
     'Coating' : ['Spot UV'],
     'Spot UV Sides' : ['Spot UV Front'],
-    'Lamination':['Silk'],
+    'Lamination':['Velvet'],
     'Colorspec': ['4/0 (4 color front)'],
-    'Runsize': [500,1000,2500,5000,10000],
-    'Scoring Options' : ['Score in Half']
+    'Runsize': [500,1000,2500,5000,10000]
 }
+
 
 module.exports = router
